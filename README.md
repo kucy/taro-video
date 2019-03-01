@@ -7,3 +7,5 @@ npm install
 
 #### 使用说明
 npm run dev:h5
+
+#### 仅供学习使用
