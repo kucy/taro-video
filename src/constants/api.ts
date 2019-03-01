@@ -1,0 +1,1 @@
+export const proxyApi: string = 'https://bird.ioliu.cn/v1?url='

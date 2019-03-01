@@ -1,0 +1,149 @@
+.index {
+  .base {
+    display: flex;
+    background: white;
+    box-sizing: border-box;
+    padding: 16px;
+    .cover {
+      width: 212px;
+      height: 290px;
+    }
+    .info {
+      flex: 1;
+      box-sizing: border-box;
+      padding-left: 16px;
+      height: 290px;
+      overflow-y: scroll;
+      padding-bottom: 8px;
+      .item {
+        padding-top: 8px;
+        font-size: 28px;
+        color: #666;
+        .progress {
+          display: inline-block;
+          padding-right: 8px;
+          color: #19b955;
+        }
+      }
+      .name {
+        font-size: 36px;
+      }
+    }
+  }
+  .source-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: white;
+    padding: 16px;
+    position: relative;
+    font-size: 28px;
+    box-sizing: border-box;
+    &:before {
+      content: '';
+      position: absolute;
+      top: 16px;
+      bottom: 16px;
+      width: 6px;
+      left: 0;
+      background: #19b955;
+    }
+    .switch {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+}
+
+.play-list {
+  box-sizing: border-box;
+  padding-top: 16px;
+  padding-left: 16px;
+  padding-right: 0;
+  background: white;
+  .item {
+    display: inline-block;
+    min-width: 20%;
+    padding-right: 16px;
+    padding-bottom: 16px;
+    box-sizing: border-box;
+    font-size: 14px;
+    text-align: center;
+  }
+}
+
+.action-list {
+  .at-action-sheet__body {
+    // max-height: 600px;
+    overflow: scroll;
+    -webkit-overflow-scrolling: touch;
+    // min-height: 10px;
+    height: 600px;
+    .action-sheet-cont {
+      // min-height: 20px;
+      height: 602px;
+    }
+  }
+  bottom: 0;
+  .active {
+    color: #19b955;
+  }
+}
+
+.dsseries-btn {
+  margin: 0 16px;
+}
+
+.white-bg {
+  background: white;
+}
+
+.intro {
+  padding: 16px;
+  margin-top: 16px;
+  background: white;
+  .title {
+    height: 50px;
+    line-height: 50px;
+  }
+  .intro-val {
+    display: block;
+    font-size: 28px;
+    color: #666;
+    margin-top: 16px;
+  }
+}
+
+.k-action-list {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1111;
+  background: rgba(0, 0, 0, .3);
+  .list {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    max-height: 600px;
+    overflow: scroll;
+    background: white;
+    -webkit-overflow-scrolling: touch;
+    .item {
+      height: 104px;
+      line-height: 104px;
+      text-align: center;
+      border-bottom: solid 1px #d6e4ef;
+      font-size: 36px;
+      &:last-child {
+        border-bottom: none;
+      }
+    }
+    .active {
+      color: #19b955;
+    }
+  }
+}

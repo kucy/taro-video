@@ -1,0 +1,35 @@
+.base {
+  display: flex;
+  background: white;
+  box-sizing: border-box;
+  padding: 16px;
+
+  .cover {
+    width: 212px;
+    height: 290px;
+  }
+
+  .info {
+    flex: 1;
+    box-sizing: border-box;
+    padding-left: 16px;
+    height: 290px;
+    overflow-y: scroll;
+    padding-bottom: 8px;
+
+    .item {
+      padding-top: 8px;
+      font-size: 28px;
+      color: #666;
+      .progress {
+        display: inline-block;
+        padding-right: 8px;
+        color: #19b955;
+      }
+    }
+
+    .name {
+      font-size: 36px;
+    }
+  }
+}

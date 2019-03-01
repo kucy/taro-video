@@ -1,0 +1,30 @@
+
+#app {
+  max-width: 1280px;
+}
+
+.container {
+  background: #f0f0f0
+}
+/*文字一行截断*/
+.nowrap {
+  max-width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+/*多行文字截断 默认2行*/
+.nowrap-multi {
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
+.none {
+  display: none!important;
+}
+
+
